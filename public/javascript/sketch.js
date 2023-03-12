@@ -31,7 +31,7 @@ function draw() {
       translate(width/2, height/2);
       rotate(i / 150 * PI + j);
       noStroke();
-      fill(40, random(0, 255), 255);
+      fill(40 + pitch * 5, random(0, 255), 255);
       scale(roll * 4);
       circle(sin(j / 150 * TAU + sin(i / 150 * PI * 4)) * i * pitch * 50, cos(j / 150 * TAU)* i, noise(2) * 4);
       pop();
